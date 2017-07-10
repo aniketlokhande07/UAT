@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VBe-vu-UB7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHw-xW-3Td">
+                                <rect key="frame" x="534" y="28" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.9582869729098451" green="1" blue="0.94189416082306154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="NdE-fA-aqC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="saveImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Q0-2S-Ds6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkD-CT-HYq">
+                                <rect key="frame" x="256" y="489" width="89" height="30"/>
+                                <state key="normal" title="Open Gallary"/>
+                                <connections>
+                                    <action selector="openGallaryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2CR-za-72z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-Rp-b7K">
+                                <rect key="frame" x="273" y="451" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="openCameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PST-Bh-sRu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VBe-vu-UB7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Ie-o7-hUX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jkD-CT-HYq" secondAttribute="bottom" constant="81" id="CZr-ta-5wn"/>
+                            <constraint firstItem="vHw-xW-3Td" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="DGU-cl-csN"/>
+                            <constraint firstItem="v3M-Rp-b7K" firstAttribute="centerX" secondItem="jkD-CT-HYq" secondAttribute="centerX" id="EK8-Gs-71D"/>
+                            <constraint firstItem="jkD-CT-HYq" firstAttribute="top" secondItem="v3M-Rp-b7K" secondAttribute="bottom" constant="8" symbolic="YES" id="Oor-af-iCy"/>
+                            <constraint firstItem="VBe-vu-UB7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ow6-X8-2QZ"/>
+                            <constraint firstItem="VBe-vu-UB7" firstAttribute="centerX" secondItem="jkD-CT-HYq" secondAttribute="centerX" id="QqR-ei-kbg"/>
+                            <constraint firstItem="vHw-xW-3Td" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RG7-gb-BAl"/>
+                            <constraint firstItem="VBe-vu-UB7" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="RT5-NH-zGh"/>
+                            <constraint firstAttribute="trailing" secondItem="VBe-vu-UB7" secondAttribute="trailing" id="SnV-Px-Yl4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vHw-xW-3Td" secondAttribute="bottom" constant="542" id="cXx-Qe-UPO"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="pickedImage" destination="VBe-vu-UB7" id="Fqk-Oj-2Q4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.8" y="123.23838080959521"/>
+        </scene>
+    </scenes>
+</document>
