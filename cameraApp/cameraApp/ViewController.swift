@@ -12,6 +12,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,
      UINavigationControllerDelegate{
 
     @IBOutlet weak var pickedImage: UIImageView!
+    var str = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
